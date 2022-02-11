@@ -1,0 +1,23 @@
+<% if (isAdded) { %>
+    <script>
+        Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'Book created successfully',
+            showConfirmButton: false,
+            timer: 1500
+        })
+    </script>
+<% } %>
+
+<% if (isDeleted) { %>
+    <script>
+        Swal.fire({
+            position: 'center',
+            icon: 'warning',
+            title: 'Book deleted successfully',
+            showConfirmButton: false,
+            timer: 1500
+        })
+    </script>
+<% } %>
